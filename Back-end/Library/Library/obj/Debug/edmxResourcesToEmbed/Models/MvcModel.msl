@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LibraryProjectFinalModelStoreContainer" CdmEntityContainer="LibraryProjectFinalEntities">
+    <EntitySetMapping Name="AdminUsers">
+      <EntityTypeMapping TypeName="LibraryProjectFinalModel.AdminUser">
+        <MappingFragment StoreEntitySet="AdminUsers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AllReleases">
+      <EntityTypeMapping TypeName="LibraryProjectFinalModel.AllReleas">
+        <MappingFragment StoreEntitySet="AllReleases">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="AuthorTitle" ColumnName="AuthorTitle" />
+          <ScalarProperty Name="AuthorText" ColumnName="AuthorText" />
+          <ScalarProperty Name="Isbn" ColumnName="Isbn" />
+          <ScalarProperty Name="IsbnCod" ColumnName="IsbnCod" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BlogHeaders">
+      <EntityTypeMapping TypeName="LibraryProjectFinalModel.BlogHeader">
+        <MappingFragment StoreEntitySet="BlogHeaders">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BlogInfos">
+      <EntityTypeMapping TypeName="LibraryProjectFinalModel.BlogInfo">
+        <MappingFragment StoreEntitySet="BlogInfos">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookCategories">
+      <EntityTypeMapping TypeName="LibraryProjectFinalModel.BookCategory">
+        <MappingFragment StoreEntitySet="BookCategories">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="AuthorTitle" ColumnName="AuthorTitle" />
+          <ScalarProperty Name="AuthorText" ColumnName="AuthorText" />
+          <ScalarProperty Name="IsbnTitle" ColumnName="IsbnTitle" />
+          <ScalarProperty Name="IsbnCod" ColumnName="IsbnCod" />
+          <ScalarProperty Name="EditionTitle" ColumnName="EditionTitle" />
+          <ScalarProperty Name="EditionDesc" ColumnName="EditionDesc" />
+          <ScalarProperty Name="LocalTitle" ColumnName="LocalTitle" />
+          <ScalarProperty Name="LocalDesc" ColumnName="LocalDesc" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Books">
+      <EntityTypeMapping TypeName="LibraryProjectFinalModel.Book">
+        <MappingFragment StoreEntitySet="Books">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="View" ColumnName="View" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BooksMediaTitles">
+      <EntityTypeMapping TypeName="LibraryProjectFinalModel.BooksMediaTitle">
+        <MappingFragment StoreEntitySet="BooksMediaTitles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Communities">
+      <EntityTypeMapping TypeName="LibraryProjectFinalModel.Community">
+        <MappingFragment StoreEntitySet="Communities">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LibraryWelcomes">
+      <EntityTypeMapping TypeName="LibraryProjectFinalModel.LibraryWelcome">
+        <MappingFragment StoreEntitySet="LibraryWelcomes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="TextWide" ColumnName="TextWide" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Logos">
+      <EntityTypeMapping TypeName="LibraryProjectFinalModel.Logo">
+        <MappingFragment StoreEntitySet="Logos">
+          <ScalarProperty Name="Classs" ColumnName="Classs" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewReleases">
+      <EntityTypeMapping TypeName="LibraryProjectFinalModel.NewReleas">
+        <MappingFragment StoreEntitySet="NewReleases">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewsEvents">
+      <EntityTypeMapping TypeName="LibraryProjectFinalModel.NewsEvent">
+        <MappingFragment StoreEntitySet="NewsEvents">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Offerings">
+      <EntityTypeMapping TypeName="LibraryProjectFinalModel.Offering">
+        <MappingFragment StoreEntitySet="Offerings">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Icon" ColumnName="Icon" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OnOrderItems">
+      <EntityTypeMapping TypeName="LibraryProjectFinalModel.OnOrderItem">
+        <MappingFragment StoreEntitySet="OnOrderItems">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="AuthorTitle" ColumnName="AuthorTitle" />
+          <ScalarProperty Name="AuthorText" ColumnName="AuthorText" />
+          <ScalarProperty Name="IsbnTitle" ColumnName="IsbnTitle" />
+          <ScalarProperty Name="IsbnCod" ColumnName="IsbnCod" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Portfolios">
+      <EntityTypeMapping TypeName="LibraryProjectFinalModel.Portfolio">
+        <MappingFragment StoreEntitySet="Portfolios">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Header" ColumnName="Header" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="ReadMore" ColumnName="ReadMore" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RelatedEvents">
+      <EntityTypeMapping TypeName="LibraryProjectFinalModel.RelatedEvent">
+        <MappingFragment StoreEntitySet="RelatedEvents">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RelatedSearchs">
+      <EntityTypeMapping TypeName="LibraryProjectFinalModel.RelatedSearch">
+        <MappingFragment StoreEntitySet="RelatedSearchs">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServicesWhos">
+      <EntityTypeMapping TypeName="LibraryProjectFinalModel.ServicesWho">
+        <MappingFragment StoreEntitySet="ServicesWhos">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Settings">
+      <EntityTypeMapping TypeName="LibraryProjectFinalModel.Setting">
+        <MappingFragment StoreEntitySet="Settings">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Adress" ColumnName="Adress" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Info" ColumnName="Info" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SliderRoots">
+      <EntityTypeMapping TypeName="LibraryProjectFinalModel.SliderRoot">
+        <MappingFragment StoreEntitySet="SliderRoots">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="TextSecond" ColumnName="TextSecond" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StaffPicks">
+      <EntityTypeMapping TypeName="LibraryProjectFinalModel.StaffPick">
+        <MappingFragment StoreEntitySet="StaffPicks">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="ContentImg" ColumnName="ContentImg" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WordsCommunities">
+      <EntityTypeMapping TypeName="LibraryProjectFinalModel.WordsCommunity">
+        <MappingFragment StoreEntitySet="WordsCommunities">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactHeaders">
+      <EntityTypeMapping TypeName="LibraryProjectFinalModel.ContactHeader">
+        <MappingFragment StoreEntitySet="ContactHeader">
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactPhones">
+      <EntityTypeMapping TypeName="LibraryProjectFinalModel.ContactPhone">
+        <MappingFragment StoreEntitySet="ContactPhone">
+          <ScalarProperty Name="District" ColumnName="District" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Icon" ColumnName="Icon" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

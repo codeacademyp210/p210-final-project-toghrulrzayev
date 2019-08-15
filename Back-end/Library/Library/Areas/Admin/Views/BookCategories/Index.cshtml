@@ -1,0 +1,94 @@
+﻿@model IEnumerable<Library.Models.BookCategory>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Image)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuthorTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuthorText)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsbnTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsbnCod)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EditionTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EditionDesc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LocalTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LocalDesc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Text)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Image)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuthorTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuthorText)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsbnTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsbnCod)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EditionTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EditionDesc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LocalTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LocalDesc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Text)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
